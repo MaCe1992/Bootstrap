@@ -2,8 +2,23 @@
     font-size: small;
 }
 .micolor{
-    background-color: rgb(220, 242, 160);
+    background-color: rgb(211, 239, 131);
 }
 .misIconos{
-    color:rgb(220, 242, 160)
+    color:rgb(211, 239, 131)
+}
+.circulo{
+    width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	background: rgb(211, 239, 131);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin:0px auto;
+    padding:3%
+}
+.miBorde{
+    border-color: rgb(211, 239, 131);
 }
