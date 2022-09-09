@@ -13,23 +13,29 @@
 <body>
 <main>
     <header class="navbar bg-white sticky-top">
-        <nav class="container navbar-expand-lg ">
+        <nav class="container navbar-expand-xl ">
             <h3 class="navbar-nav navbar-brand">OUSTA</h3>
-            <div class="navbar-nav">
-                <a href="#" class="nav-link">INICIO</a>
-                <a href="#sobreMi" class="nav-link">SOBRE MI</a>
-                <a href="#" class="nav-link">SERVICIOS</a>
-                <a href="#" class="nav-link">RESUMEN</a>
-                <a href="#" class="nav-link">PORTFOLIO</a>
-                <a href="#" class="nav-link">PREGUNTAS FRECUENTES</a>
-                <a href="#" class="nav-link">CLIENTES</a>
-                <a href="#" class="nav-link">CONTACTO</a>                
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAbre">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarAbre">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-link">INICIO</a>
+                    <a href="#sobreMi" class="nav-link">SOBRE MI</a>
+                    <a href="#" class="nav-link">SERVICIOS</a>
+                    <a href="#" class="nav-link">RESUMEN</a>
+                    <a href="#" class="nav-link">PORTFOLIO</a>
+                    <a href="#" class="nav-link">PREGUNTAS FRECUENTES</a>
+                    <a href="#" class="nav-link">CLIENTES</a>
+                    <a href="#" class="nav-link">CONTACTO</a>                
+                </div>
+                <div class="navbar-nav">
+                    <a href="#"><i class="bi bi-facebook text-secondary fs-5 nav-link"></i></a>
+                    <a href="#"><i class="bi bi-twitter text-secondary fs-5 nav-link"></i></a>
+                    <a href="#"><i class="bi bi-instagram text-secondary fs-5 nav-link"></i></a>                
+                </div>                
             </div>
-            <div class="navbar-nav">
-                <a href="#"><i class="bi bi-facebook text-secondary fs-5 nav-link"></i></a>
-                <a href="#"><i class="bi bi-twitter text-secondary fs-5 nav-link"></i></a>
-                <a href="#"><i class="bi bi-instagram text-secondary fs-5 nav-link"></i></a>                
-            </div>
+
         </nav>
     </header>
     <section class="micolor pt-5">
@@ -39,10 +45,9 @@
                     <h4>HOLA, SOY UN DESARROLLADOR</h4>
                     <p class="display-3 fw-bold">INDEPENDIENTE</p>
                     <p class="mb-4">establecido en CABA, ARGENTINA.</p>
-                    <a href="#" class="btn btn-dark">Ver Mis Trabajos</a>  
+                    <a href="#" class="btn btn-dark rounded-0">Ver Mis Trabajos</a>  
                     <a href="#" class="text-dark p-4">Contactarme<i class="bi bi-arrow-down-circle m-2"></i></a>                
                 </div>
-
                 <div class="col-lg-6">
                     <img class="rounded-circle img-thumbnail" src="./imagenes/IMG_2703.png" width="200px" alt="Mi imagen">
                 </div>
@@ -280,7 +285,7 @@
             </div>
         </div>
         <div class="container text-center">
-            <a class="btn btn-outline-dark" href="./Matias Ousta CV.pdf">Descargar CV</a>
+            <a class="btn btn-outline-dark rounded-0" href="./Matias Ousta CV.pdf">Descargar CV</a>
         </div>
     </section>
     <!-- Portfolio -->
@@ -329,17 +334,60 @@
     <section>
         <div class="container text-center">
             <h2 class="p-4 mb-4">Interesado en trabajar conmigo?</h2>
-            <button class="micolor btn pt-3 pb-3 ps-4 pe-4">Contrátame!</button> 
+            <button class="micolor rounded-0 btn pt-3 pb-3 ps-4 pe-4">Contrátame!</button> 
         </div>
         <div class="container">
             <h5 class="micolor d-inline ps-2 pe-2">Preguntas Frecuentes</h5>
             <h2>Tienes alguna pregunta?</h2>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+
+                </div>
+            </div>
+
+        </div>
     </section>
     <!-- lo que dicen los clientes -->
-   <section>
-    <!-- fondo verde -->
-   </section>
+    <section class="micolor">
+        <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <h3>Mantengámonos en contacto</h3>
+                        <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta voluptas quis quisquam suscipit voluptatum minus ut hic sed, inventore eius numquam ipsam est error aliquam eos sequi molestiae architecto quibusdam.</h5>
+                        <h5>Viviendo en:</h5>
+                        <p>Manuel Ugarte 1992, CABA, Argentina</p>
+                        <h5>Teléfono</h5>
+                        <p>+54 911 5825 7908</p>
+                        <a href="#"><i class="bi bi-facebook text-secondary fs-5 nav-link"></i></a>
+                        <a href="#"><i class="bi bi-twitter text-secondary fs-5 nav-link"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-secondary fs-5 nav-link"></i></a>
+                        <a href="#"><i class="bi bi-github text-secondary fs-5 nav-link"></i></a>
+                        
+                    </div>
+                    <div class="col-lg">
+                        <h3>Desea estimar su proyecto?</h3>
+                        <form action="">
+                            <div class="mb-4">
+                                <label class="form-label">Cuál es tu nombre?</label>
+                                <input type="name" class="border-secondary border-top-0 border-start-0 border-end-0  rounded-0 micolor form-control">
+                            </div>
+                            <div class="mb-4">
+                                <label for="InputEmail" class="form-label">Dirección de correo electrónico</label>
+                                <input type="email" class="border-secondary border-top-0 border-start-0 border-end-0 rounded-0 micolor form-control" id="InputEmail">
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Cómo puedo ayudarte?</label>
+                                <textarea class="border-secondary border-top-0 border-start-0 border-end-0 rounded-0 micolor form-control" name="" id="" cols="30" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark rounded-0 ps-4 pe-4">Enviar <i class="bi bi-arrow-right-short"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
    <section>
 
    </section>
